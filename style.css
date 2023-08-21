@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Outfit&display=swap");
+
+/* font-family: 'Outfit', sans-serif; */
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue: hsl(217, 54%, 11%);
+  --Very-dark-blue: hsl(216, 50%, 16%);
+  --Very-dark-blue: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  background: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  height: 550px;
+  background: hsl(216, 50%, 16%);
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.image {
+  background: url(images/image-equilibrium.jpg) no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.image:hover {
+  height: 100%;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.effect {
+  background: url(images/icon-view.svg) no-repeat center;
+  background-color: hsl(178, 100%, 50%);
+  height: 50%;
+  width: 90%;
+  margin-top: 5%;
+  margin-left: 5%;
+  border-radius: 15px;
+}
+
+.content {
+  margin-left: 5%;
+  color: hsl(0, 0%, 100%);
+}
+
+h3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+
+h3:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.first-p {
+  color: hsl(215, 51%, 70%);
+  font-family: "Outfit", sans-serif;
+  width: 300px;
+}
+
+.main {
+  display: flex;
+}
+
+.second-p {
+  font-family: "Outfit", sans-serif;
+  color: hsl(178, 100%, 50%);
+  width: 180px;
+  font-size: 13px;
+}
+
+.third-p {
+  font-family: "Outfit", sans-serif;
+  color: hsl(215, 51%, 70%);
+  font-size: 13px;
+}
+
+.line {
+  background: hsl(215, 32%, 27%);
+  height: 0.5px;
+  width: 90%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  align-items: center;
+}
+
+.picture {
+  background: url(images/image-avatar.png) no-repeat center center/cover;
+  height: 25px;
+  width: 25px;
+}
+
+.text {
+  width: 270px;
+  font-size: 13px;
+  font-family: "Outfit", sans-serif;
+}
+
+.text:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+span {
+  color: hsl(215, 51%, 70%);
+}
+
+/* responsive css */
+@media (max-width: 750px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: 90%;
+  }
+
+  .image {
+    height: 100%;
+    width: 100%;
+  }
+
+  .effect {
+    height: 50%;
+    width: 85%;
+    margin-left: 0;
+    margin-top: 7%;
+    border-radius: 10px;
+  }
+
+  .content {
+    height: 50%;
+    width: 75vw;
+  }
+
+  .first-p {
+    width: 250px;
+  }
+
+  .second-p {
+    width: 160px;
+    font-size: 13px;
+  }
+}
